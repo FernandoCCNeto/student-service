@@ -1,6 +1,6 @@
 import express from 'express';
-import StudentRepositoryArray from './school/adapter/repository/studentsRepositoryArray';
-import StudentController from './school/http/rest/studentsController';
+import StudentRepositoryArray from './student/adapter/repository/studentsRepositoryArray';
+import StudentController from './student/http/rest/studentsController';
 
 const studentRepository = new StudentRepositoryArray();
 const studentController = new StudentController(studentRepository);
